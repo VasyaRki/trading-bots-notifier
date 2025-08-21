@@ -12,5 +12,5 @@ export const buildPumpMessage = (data) => {
   const provider = capitalizeFirstLetter(data.provider);
   const formattedSymbolLink = `[${symbol}](https://www.coinglass.com/tv/${provider}_${symbol})`;
 
-  return `${logo} ${provider} - 20m - ${formattedSymbolLink}\n📈 Price change by ${percentageChange}%\n🔉 Number of signals within 24 hours: 1`;
+  return `${logo} ${provider} - 20m - ${formattedSymbolLink}\n📈 Price change by ${percentageChange}%\n🔉 Number of signals within 24 hours: ${data.signalsCountPerDay}`;
 };

@@ -17,5 +17,5 @@ export const buildOIMessage = (data) => {
   const provider = capitalizeFirstLetter(data.provider);
   const formattedSymbolLink = `[${symbol}](https://www.coinglass.com/tv/${provider}_${symbol})`;
 
-  return `${logo} ${provider} - 30m - ${formattedSymbolLink}\n📈 OI change by ${openInterestPercentageDifference}%\n💲 Price change: ${openClosePercentageDifference}%\n🔉 Number of signals within 24 hours: ${1}`;
+  return `${logo} ${provider} - 20m - ${formattedSymbolLink}\n📈 OI change by ${openInterestPercentageDifference}%\n💲 Price change: ${openClosePercentageDifference}%\n🔉 Number of signals within 24 hours: ${signalsCountPerDay}`;
 };
